@@ -1,5 +1,5 @@
 import React from 'react';
-import Users from './Users';
+import Users from './components/users/Users';
 import './App.css';
 const payload = {
   users: [

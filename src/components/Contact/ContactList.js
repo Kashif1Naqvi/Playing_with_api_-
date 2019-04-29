@@ -5,9 +5,9 @@ class ContactList extends Component{
         const contact = this.props.contact
         return(
             <div>
-                <p>ContactId:{contact.id}</p>
-                <p>type:{contact.type}</p>
-                <p>Number:{contact.number}</p>
+                <p className="form-control" >ContactId:{contact.id}</p>
+                <p className="form-control" >type:{contact.type}</p>
+                <p className="form-control" >Number:{contact.number}</p>
             </div>
         )
     }

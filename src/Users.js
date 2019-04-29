@@ -5,8 +5,13 @@ class Users extends Component{
         console.log(this.props.users)
     const userList = this.props.users.map((user)=><User user={user} key={user.id} />)
         return(
-            <div>
-                {userList}
+            <div id="container">
+                <h1>Welcome to play with Objects in React</h1>
+                <fieldset>
+                    <legend >
+                        {userList}
+                    </legend>
+                </fieldset>
             </div>
         )
     }

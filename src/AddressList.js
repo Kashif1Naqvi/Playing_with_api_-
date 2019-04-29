@@ -5,7 +5,7 @@ class AddressList extends Component{
         const address = this.props.address
         return(
             <div>
-                <p>Id:{address.id}</p>
+                <p>AddressId:{address.id}</p>
                 <p>Type:{address.type}</p>
                 <p>Address:{address.address}</p>
                 <p>City:{address.city}</p>

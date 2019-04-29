@@ -1,14 +1,11 @@
 import React,{Component} from 'react'
-
+import ContactList from './ContactList'
 class ContactNumber extends Component{
     render(){
-        const contact = this.props.contact
-        console.log(contact)
+        const contact = this.props.contact.map((contact)=><ContactList contact={contact} key={contact.id}  />)
         return(
             <div>
-                {/* <p>{contact.id}</p>
-                <p>type:{contact.type}</p>
-                <p>Number:{contact.number}</p> */}
+                {contact}
             </div>
         )
 }

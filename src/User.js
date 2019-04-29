@@ -1,11 +1,12 @@
 import React,{Component} from 'react'
 import Addresses from './Addresses'
 import ContactNumber from './ContactNumber'
+import Languages from './Languages'
 class User extends Component{
     render(){
         const user = this.props.user
         return(
-            <div>
+            <div className="text-muted" key={user.id} >
                 <li>ID:{user.id}</li><hr/>
                 <p>FirstName:{user.firstName}</p>
                 <p>LastName:{user.lastName}</p>
@@ -16,6 +17,7 @@ class User extends Component{
                 <p>occupation :{user.occupation}</p>
                 <Addresses address={user.addresses}  />
                 <ContactNumber contact={user.contactNumbers} />
+                <Languages     language={user.languages} />
             </div>
         )
     }

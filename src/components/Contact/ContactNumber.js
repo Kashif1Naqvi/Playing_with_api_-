@@ -1,13 +1,11 @@
-import React,{Component} from 'react'
-import ContactList from './ContactList'
-class ContactNumber extends Component{
-    render(){
-        const contact = this.props.contact.map((contact)=><ContactList contact={contact} key={contact.id}  />)
-        return(
-            <div>
-                {contact}
-            </div>
-        )
-}
-}
+import React from "react";
+import ContactList from "./ContactList";
+
+const ContactNumber = ({ contacts }) => {
+  const contactsMapped = contacts.map(contact => (
+    <ContactList contact={contact} key={contact.id} />
+  ));
+  return <div>{contactsMapped}</div>;
+};
+
 export default ContactNumber;

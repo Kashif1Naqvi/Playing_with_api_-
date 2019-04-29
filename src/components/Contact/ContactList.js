@@ -1,15 +1,11 @@
-import React,{Component} from 'react'
+import React from "react";
 
-class ContactList extends Component{
-    render(){
-        const contact = this.props.contact
-        return(
-            <div>
-                <p className="form-control" >ContactId:{contact.id}</p>
-                <p className="form-control" >type:{contact.type}</p>
-                <p className="form-control" >Number:{contact.number}</p>
-            </div>
-        )
-    }
-}
-export default ContactList
+const ContactList = ({ contact }) => (
+  <div>
+    <p className="form-control">ContactId:{contact.id}</p>
+    <p className="form-control">type:{contact.type}</p>
+    <p className="form-control">Number:{contact.number}</p>
+  </div>
+);
+
+export default ContactList;
